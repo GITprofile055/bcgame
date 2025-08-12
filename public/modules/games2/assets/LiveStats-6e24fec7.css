@@ -1,0 +1,43 @@
+.circular-content {
+    width: 13.5rem;
+    height: 13.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.circulars {
+    position: absolute;
+    width: 14rem;
+    height: 7rem;
+    top: 0;
+    left: 0;
+    overflow: hidden
+}
+
+.ring-circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 13.5rem;
+    height: 6.75rem;
+    border: 5px solid;
+    border-radius: 6.75rem 6.75rem 0 0;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.double-circle {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 13.5rem;
+    height: 6.75rem;
+    border: 5px solid #23ee88;
+    border-radius: 6.75rem 6.75rem 0 0;
+    border-bottom: none;
+    transform: rotate(0);
+    transform-origin: center bottom
+}

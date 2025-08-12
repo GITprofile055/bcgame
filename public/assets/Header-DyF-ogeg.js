@@ -1,0 +1,367 @@
+const __vite__mapDeps = (i, m = __vite__mapDeps, d = (m.f || (m.f = ["assets/Main-CsXfA-FQ.js", "assets/vendor-DYV1gSPf.js", "assets/common-Byjxyxqw.js", "assets/index-BSHcnsSF.js", "assets/index-Dfx0OxOD.css", "assets/Icon-BgwktVOY.js", "assets/AfterLogin-FjathJTz.js", "assets/bonus-notifications-BRUOBv2p.js", "assets/utils-YcNhbyA6.js", "assets/index-B7YqamC_.js", "assets/index-PMN1ixIk.js", "assets/index-QTA-ca3p.js", "assets/index-CYuUsUXS.js", "assets/index-DIx3mlBq.css", "assets/OriginalsGames-CqUo7OWU.js"]))) => i.map(i => d[i]);
+import {
+    B as g,
+    j as T,
+    u as V,
+    e as A,
+    a as h,
+    F as C,
+    a1 as R,
+    d as x,
+    ax as z,
+    b as j,
+    _,
+    L as B,
+    i as y,
+    Q as E
+} from "./common-Byjxyxqw.js";
+import {
+    k as e,
+    v as o,
+    y as n,
+    Y as p,
+    Q as H,
+    h as N,
+    S as O,
+    E as I,
+    V as w,
+    a2 as $,
+    b,
+    j as M,
+    r as U,
+    H as F,
+    F as P,
+    a3 as k
+} from "./vendor-DYV1gSPf.js";
+import {
+    t as v,
+    r as Z,
+    a8 as D,
+    a9 as Q
+} from "./index-BSHcnsSF.js";
+import W from "./index-PMN1ixIk.js";
+import {
+    S as Y,
+    N as q
+} from "./index-CYuUsUXS.js";
+var G = o('<svg xmlns=http://www.w3.org/2000/svg class="size-6 fill-secondary"viewBox="0 0 24 24"><path fill-rule=evenodd clip-rule=evenodd d="M14.1018 16.3007C12.8835 17.2777 11.3369 17.8621 9.6537 17.8621C5.72399 17.8621 2.53833 14.6764 2.53833 10.7467C2.53833 6.81701 5.72399 3.63135 9.6537 3.63135C13.5834 3.63135 16.7691 6.81701 16.7691 10.7467C16.7691 12.4471 16.1726 14.0082 15.1775 15.2322L15.9161 15.9708L14.844 17.0429L14.1018 16.3007ZM14.502 10.7466C14.502 13.4242 12.3313 15.5948 9.65371 15.5948C6.9761 15.5948 4.80546 13.4242 4.80546 10.7466C4.80546 8.06896 6.9761 5.89833 9.65371 5.89833C12.3313 5.89833 14.502 8.06896 14.502 10.7466Z"></path><path fill-rule=evenodd clip-rule=evenodd d="M18.7113 21.0375C18.5768 21.172 18.3587 21.1717 18.2246 21.0368L14.7097 17.5C14.5763 17.3657 14.5766 17.1487 14.7105 17.0148L15.8997 15.8256C16.0342 15.6911 16.2524 15.6915 16.3864 15.8264L19.9013 19.3631C20.0348 19.4974 20.0345 19.7144 19.9006 19.8483L18.7113 21.0375Z"></path><path d="M22.8805 4.7869C22.2731 5.03857 21.7882 5.26507 21.4258 5.46641C21.0667 5.66775 20.7866 5.8674 20.5852 6.06539C20.3872 6.26337 20.1876 6.54188 19.9862 6.90093C19.7849 7.25998 19.555 7.75158 19.2967 8.37572H19.0903C18.8286 7.75158 18.597 7.25998 18.3957 6.90093C18.1943 6.54188 17.9964 6.26337 17.8017 6.06539C17.6004 5.8674 17.3185 5.66775 16.9561 5.46641C16.5971 5.26507 16.1122 5.03857 15.5015 4.7869V4.58053C16.1155 4.32886 16.6021 4.10235 16.9612 3.90102C17.3236 3.69968 17.6038 3.50002 17.8017 3.30204C17.9964 3.10406 18.1943 2.82554 18.3957 2.46649C18.597 2.10744 18.8286 1.61584 19.0903 0.991699H19.2967C19.555 1.61584 19.7849 2.10744 19.9862 2.46649C20.1876 2.82554 20.3872 3.10406 20.5852 3.30204C20.7798 3.50002 21.0567 3.69968 21.4157 3.90102C21.7781 4.10235 22.2664 4.32886 22.8805 4.58053V4.7869Z">');
+const J = function(t) {
+    return e(g, {
+        class: "rounded-lg bg-layer5 size-10 p-0",
+        onClick: () => t.setExplore(!0),
+        get children() {
+            return G()
+        }
+    })
+};
+var K = o('<div class="size-7 scale-90">'),
+    X = o('<div class="relative ml-3 flex h-10 w-10 flex-none rounded-lg bg-layer5">'),
+    ee = o('<div class="absolute h-6 left-10 top-2 w-[1px] bg-third">'),
+    te = o('<span class="font-semibold text-secondary">'),
+    re = o('<div class="absolute left-0 top-0 flex size-full items-center overflow-hidden px-3 justify-end"><div class="relative ml-3 flex h-10 flex-none rounded-lg bg-layer5 w-auto">');
+const le = function(t) {
+    const d = T(),
+        {
+            isSpHost: i,
+            isUsHost: a,
+            isBrAuditHost: f
+        } = V.getHostType(A.host);
+    return (() => {
+        var r = re(),
+            l = r.firstChild;
+        return n(r, e(p, {
+            when: !f,
+            get children() {
+                return e(J, {
+                    get setExplore() {
+                        return t.setExplore
+                    }
+                })
+            }
+        }), l), n(r, e(g, {
+            class: "ml-3 h-10 rounded-lg border-solid px-4 text-base border-2 border-third",
+            onClick: () => d("/login/signin"),
+            get children() {
+                return v("Sign In")
+            }
+        }), l), n(r, e(g, {
+            type: "brand",
+            class: "h-10 rounded-lg px-4 text-base ml-1 min-w-24",
+            onClick: () => d("/login/regist"),
+            get children() {
+                return v("Sign Up")
+            }
+        }), l), n(r, e(p, {
+            when: !(i || a || f),
+            get children() {
+                var u = X();
+                return n(u, e(g, {
+                    class: "size-10 p-0",
+                    onClick: () => t.setRight("chat"),
+                    get children() {
+                        var c = K();
+                        return n(c, e(Z, {
+                            name: "chat",
+                            select: !1,
+                            scale: "scale(0.9)"
+                        })), c
+                    }
+                })), u
+            }
+        }), l), n(l, e(g, {
+            class: "relative size-10 p-0",
+            onClick: () => h.emit("open-lanfiat", 0),
+            get children() {
+                return e(C, {
+                    name: "Language",
+                    class: "size-6 text-secondary"
+                })
+            }
+        }), null), n(l, e(p, {
+            get when() {
+                return x.setting.enableLocaleCurrency
+            },
+            get children() {
+                return [ee(), e(g, {
+                    class: "h-10 px-2 py-0",
+                    onClick: () => h.emit("open-lanfiat", 1),
+                    get children() {
+                        var u = te();
+                        return n(u, () => R.getAlias(x.setting.localeCurrencyName).replace(/FIAT$/, "")), u
+                    }
+                })]
+            }
+        }), null), r
+    })()
+};
+var ne = o('<div class="left-0 top-0 z-10 w-full bg-layer2 py-4 center sticky h-16 px-6"><span class="text-base font-extrabold">'),
+    ae = o('<div class="w-full px-6">'),
+    se = o('<div class="h-full w-full"><div class="h-full w-full mx-auto max-w-[1248px]">');
+const oe = function(t) {
+    let d = 0;
+    const i = H();
+    return N(O([() => i.pathname], () => {
+        d > 0 && t.setExplore(!1), d++
+    })), h.on("close-explore", () => {
+        t.setExplore(!1)
+    }), (() => {
+        var a = se(),
+            f = a.firstChild;
+        return n(f, e(z, {
+            class: "hidden-scroll-bar h-full w-full",
+            get children() {
+                return [(() => {
+                    var r = ne(),
+                        l = r.firstChild;
+                    return n(l, () => v("Explore")), n(r, e(g, {
+                        class: "absolute rounded-lg bg-layer6 right-6 top-4 size-8 p-0",
+                        onClick: () => t.setExplore(!1),
+                        get children() {
+                            return e(C, {
+                                name: "Close",
+                                class: "text-secondary size-5"
+                            })
+                        }
+                    }), null), r
+                })(), (() => {
+                    var r = ae();
+                    return n(r, e(W, {})), r
+                })()]
+            }
+        })), I(r => (r = j.darken ? "rgba(35, 38, 38, 0.96)" : "rgba(244,244,244,0.96)") != null ? a.style.setProperty("background", r) : a.style.removeProperty("background")), a
+    })()
+};
+var ie = o('<div class=w-full><div class="flex items-center justify-center bg-layer4 text-base font-extrabold pl-4 h-15">'),
+    ce = o('<div class="flex h-full w-full center">');
+const de = w(() => _(() =>
+        import ("./Main-CsXfA-FQ.js"), __vite__mapDeps([0, 1, 2, 3, 4, 5]))),
+    ue = function() {
+        return (() => {
+            var t = ie(),
+                d = t.firstChild;
+            return t.style.setProperty("height", "calc(100% - 3.75rem)"), n(d, () => v("Notification")), n(t, e($, {
+                get fallback() {
+                    return (() => {
+                        var i = ce();
+                        return n(i, e(B, {})), i
+                    })()
+                },
+                get children() {
+                    return e(z, {
+                        class: "h-full",
+                        get children() {
+                            return e(de, {})
+                        }
+                    })
+                }
+            }), null), t
+        })()
+    };
+
+function pe(s) {
+    const t = H();
+    return N(() => {
+        t.pathname.startsWith("/bti") && h.emit("toggle-sidebar", !0)
+    }), e(Y, {
+        get fold() {
+            return s.fold
+        },
+        get class() {
+            return y("hidden-scroll-bar absolute left-0 top-0 h-full w-60 transition-all overflow-y-auto !bg-layer3 duration-200", s.fold && "w-[72px]")
+        }
+    })
+}
+var ge = o("<div><div>");
+const fe = function() {
+    const [t, d] = b([]), [i, a] = b(0), [f, r] = b(!1);
+    return h.on("open-sidebar-sports", l => {
+        M(() => {
+            d(l.list), r(l.list.length > 0), a(l.top)
+        })
+    }), h.on("open-sidebar-sports-close", () => r(!1)), (() => {
+        var l = ge(),
+            u = l.firstChild;
+        return l.addEventListener("mouseleave", () => r(!1)), l.addEventListener("mouseenter", () => r(!0)), l.style.setProperty("transition", "width 0.2s"), u.style.setProperty("box-shadow", "4px 0px 8px 0px rgba(0, 0, 0, 0.05)"), u.style.setProperty("background", "var(--Sidebar-Unit_bg)"), u.style.setProperty("border-radius", "0px 12px 12px 0px"), n(u, e(F, {
+            get each() {
+                return t()
+            },
+            children: c => e(q, U(c, {
+                fold: !1
+            }))
+        })), I(c => {
+            var L = y("absolute top-0 h-full cursor-pointer left-full -ml-4 pl-4", f() ? "w-[256px]" : "select-none pointer-events-none w-[0px] bg-transparent"),
+                m = `${i()}px`,
+                S = y("hidden-scroll-bar h-auto w-full px-2 py-4 overflow-y-auto", !f() && "select-none opacity-0");
+            return L !== c.e && P(l, c.e = L), m !== c.t && ((c.t = m) != null ? l.style.setProperty("padding-top", m) : l.style.removeProperty("padding-top")), S !== c.a && P(u, c.a = S), c
+        }, {
+            e: void 0,
+            t: void 0,
+            a: void 0
+        }), l
+    })()
+};
+var he = o('<div class="right-slide-content relative h-full w-full">');
+const ve = w(() => _(() =>
+        import ("./AfterLogin-FjathJTz.js"), __vite__mapDeps([6, 1, 2, 7, 3, 4, 5, 8, 9, 10, 11, 12, 13]))),
+    me = w(() => _(() =>
+        import ("./OriginalsGames-CqUo7OWU.js"), __vite__mapDeps([14, 1, 2, 3, 4, 12, 8, 13])));
+
+function be({
+    right: [s, t],
+    explore: [d, i]
+}) {
+    return [e(p, {
+        get when() {
+            return x.login
+        },
+        get fallback() {
+            return e(le, {
+                setRight: t,
+                setExplore: i
+            })
+        },
+        get children() {
+            return e($, {
+                get children() {
+                    return e(ve, {
+                        get right() {
+                            return s()
+                        },
+                        setRight: t,
+                        setExplore: i
+                    })
+                }
+            })
+        }
+    }), e(k, {
+        ref: a => a.className = "explore-pop",
+        get children() {
+            return e(E, {
+                name: "fadeUp2",
+                get children() {
+                    return e(p, {
+                        get when() {
+                            return d()
+                        },
+                        get children() {
+                            return e(oe, {
+                                setExplore: i
+                            })
+                        }
+                    })
+                }
+            })
+        }
+    }), e(k, {
+        ref: a => a.className = "chat-notice",
+        get children() {
+            var a = he();
+            return n(a, e(g, {
+                class: "absolute size-8 rounded-lg bg-layer5 right-2 top-3.5 z-[101]",
+                onClick: () => t(""),
+                get children() {
+                    return e(C, {
+                        name: "Close",
+                        class: "size-4 text-secondary"
+                    })
+                }
+            }), null), n(a, e(p, {
+                get when() {
+                    return s() !== ""
+                },
+                get children() {
+                    return e(E, {
+                        name: "fadeRight",
+                        get children() {
+                            return [e(p, {
+                                get when() {
+                                    return s() === "notice"
+                                },
+                                get children() {
+                                    return e(ue, {})
+                                }
+                            }), e(p, {
+                                get when() {
+                                    return s() === "chat"
+                                },
+                                get children() {
+                                    return e(D, {})
+                                }
+                            }), e(p, {
+                                get when() {
+                                    return s() === "private-chat"
+                                },
+                                get children() {
+                                    return e(Q, {})
+                                }
+                            })]
+                        }
+                    })
+                }
+            }), null), a
+        }
+    })]
+}
+
+function xe(s) {
+    return [e(pe, {
+        get fold() {
+            return s.fold
+        }
+    }), e($, {
+        fallback: null,
+        get children() {
+            return e(me, {})
+        }
+    }), e(fe, {})]
+}
+const Le = Object.freeze(Object.defineProperty({
+    __proto__: null,
+    Sidebar: xe,
+    default: be
+}, Symbol.toStringTag, {
+    value: "Module"
+}));
+export {
+    Le as H, J as S
+};

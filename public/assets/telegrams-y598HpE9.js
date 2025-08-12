@@ -1,0 +1,177 @@
+import {
+    e
+} from "./common-Byjxyxqw.js";
+const m = [{
+    imgName: "bcgame",
+    name: e.host.toUpperCase(),
+    tgname: "@bcgamewin",
+    link: "https://t.me/bcgamewin"
+}, {
+    imgName: "sports",
+    name: "Sports",
+    tgname: "@bcgamesports",
+    link: "https://t.me/bcgamesports"
+}, {
+    imgName: "india",
+    name: "India",
+    tgname: "@bcgame_india",
+    link: "https://t.me/bcgame_india",
+    emoji: "🇮🇳",
+    lang: ["en-IN", "te", "ta", "mr", "hi"],
+    twitter: "https://x.com/bcgameIN",
+    instagram: "https://www.instagram.com/bcgamein/",
+    facebook: "https://www.facebook.com/people/BCGame-India/61576687449965/"
+}, {
+    imgName: "brazil",
+    name: "Português",
+    tgname: "@bcgamenotificacoes",
+    link: "https://t.me/bcgamenotificacoes",
+    emoji: "🇧🇷",
+    lang: ["pt"],
+    twitter: "https://x.com/BCGAMEBrasil",
+    facebook: "https://www.facebook.com/BCGameBrazil/"
+}, {
+    imgName: "philippine",
+    name: "Filipino",
+    tgname: "@bcgame_philippines",
+    link: "https://t.me/bcgame_philippines",
+    emoji: "🇵🇭",
+    lang: ["fil"]
+}, {
+    imgName: "german",
+    name: "Deutsche",
+    tgname: "@bcgame_german",
+    link: "https://t.me/bcgame_german",
+    emoji: "🇩🇪",
+    lang: ["de"]
+}, {
+    imgName: "indonesia",
+    name: "Indonesia",
+    tgname: "@bcgame_indo",
+    link: "https://t.me/bcgame_indo",
+    emoji: "🇮🇩",
+    lang: ["id"]
+}, {
+    imgName: "pakistan",
+    name: "اردو",
+    tgname: "@bcgame_pakistan",
+    link: "https://t.me/bcgame_pakistan",
+    emoji: "🇵🇰",
+    lang: ["ur"]
+}, {
+    imgName: "korea",
+    name: "한국인",
+    tgname: "@bcgamekoreachannel",
+    link: "https://t.me/bcgamekoreachannel",
+    emoji: "🇰🇷",
+    lang: ["ko"]
+}, {
+    imgName: "japan",
+    name: "日本語",
+    tgname: "@bcgamejapan",
+    link: "https://t.me/bcgamejapan",
+    emoji: "🇯🇵",
+    lang: ["ja"]
+}, {
+    imgName: "cis",
+    name: "Русский",
+    tgname: "@bcgame_cis",
+    link: "https://t.me/bcgame_cis",
+    emoji: "🇷🇺",
+    lang: ["ru"],
+    instagram: "https://www.instagram.com/bcgamecis/",
+    facebook: "https://www.facebook.com/bcgamecis/"
+}, {
+    imgName: "french",
+    name: "Français",
+    tgname: "@bcgame_france",
+    link: "https://t.me/bcgame_france",
+    emoji: "🇫🇷",
+    lang: ["fr"]
+}, {
+    imgName: "spanish",
+    name: "Español",
+    tgname: "@bcgame_spanish",
+    link: "https://t.me/bcgame_spanish",
+    emoji: "🇪🇸",
+    lang: ["es"]
+}, {
+    imgName: "mexico",
+    name: "Mexico",
+    tgname: "@bcgame_mexico",
+    link: "https://t.me/bcgame_mexico",
+    emoji: "🇲🇽",
+    lang: ["es-MX"],
+    facebook: "https://www.facebook.com/people/Bcgamemx/61575782111856/"
+}, {
+    imgName: "argentina",
+    name: "Argentina",
+    tgname: "@bcgame_argentina1",
+    link: "https://t.me/bcgame_argentina1",
+    emoji: "🇦🇷",
+    lang: ["es"]
+}, {
+    imgName: "vietnam",
+    name: "Tiếng Việt",
+    tgname: "@bcgame_vietnam",
+    link: "https://t.me/bcgame_vietnam",
+    emoji: "🇻🇳",
+    lang: ["vi"],
+    facebook: "https://www.facebook.com/bcgamevietnamese/"
+}, {
+    imgName: "thailand",
+    name: "แบบไทย",
+    tgname: "@bcgamethailandchannel",
+    link: "https://t.me/bcgamethailandchannel",
+    emoji: "🇹🇭",
+    lang: ["th"]
+}, {
+    imgName: "persian",
+    name: "فارسی",
+    tgname: "@bcgame_persia1",
+    link: "https://t.me/bcgame_persia1",
+    emoji: "🇮🇷",
+    lang: ["fa"]
+}, {
+    imgName: "myanmar",
+    name: "မြန်မာ",
+    tgname: "@bcgamemyanmarchannel",
+    link: "https://t.me/bcgamemyanmarchannel",
+    emoji: "🇲🇲",
+    lang: ["my"]
+}, {
+    imgName: "bangladesh",
+    name: "Bangladesh",
+    tgname: "@bcgame_bangladesh1",
+    link: "https://t.me/bcgame_bangladesh1",
+    emoji: "🇧🇩",
+    lang: ["bn"]
+}, {
+    imgName: "chinese",
+    name: "简体中文",
+    tgname: "@bcgame_chinese",
+    link: "https://t.me/bcgame_chinese",
+    emoji: "🇨🇳",
+    lang: ["zh-CN"]
+}, {
+    imgName: "chinese",
+    name: "繁體中文",
+    tgname: "@bcgame_chinese",
+    link: "https://t.me/bcgame_chinese",
+    emoji: "🇨🇳",
+    lang: ["zh-TW"]
+}, {
+    imgName: "nigeria",
+    name: "Nigeria",
+    tgname: "@bcgame_nigeria",
+    link: "https://t.me/bcgame_nigeria",
+    emoji: "🇳🇬"
+}, {
+    imgName: "poker",
+    name: "Poker",
+    tgname: "@bcpokerofficial",
+    link: "https://t.me/bcpokerofficial"
+}];
+export {
+    m as t
+};

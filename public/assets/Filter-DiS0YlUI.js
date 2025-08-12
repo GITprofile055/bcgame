@@ -1,0 +1,73 @@
+import {
+    v as n,
+    y as a,
+    k as o,
+    J as v,
+    E as d,
+    F as u
+} from "./vendor-DYV1gSPf.js";
+import {
+    I as f,
+    k as i,
+    b as g,
+    e as c,
+    M as _,
+    i as h
+} from "./common-Byjxyxqw.js";
+import {
+    s as p,
+    t as m
+} from "./index-BSHcnsSF.js";
+var $ = n("<div>"),
+    C = n('<span class="mr-1 text-secondary">'),
+    w = n("<span>"),
+    x = n('<div class="flex h-10 overflow-hidden center">');
+const F = function(t) {
+    return (() => {
+        var s = $();
+        return a(s, o(_, {
+            class: "flex-1 bg-layer3",
+            throttle: 1500,
+            get value() {
+                return t.selectProvider
+            },
+            get options() {
+                return t.providers
+            },
+            get disabled() {
+                return t.providers.length <= 0
+            },
+            onChange: e => e && t.changeSelectProvider(e),
+            labelFormat: e => [(() => {
+                var r = C();
+                return a(r, () => m("Providers") + ":"), r
+            })(), (() => {
+                var r = w();
+                return a(r, (() => {
+                    var l = v(() => e().length > 0);
+                    return () => l() ? "+" + e().length : m("All")
+                })()), r
+            })()],
+            layerRender: e => [e, o(p, {
+                onClear: () => t.changeSelectProvider([])
+            })],
+            children: e => {
+                const r = e().providerName.includes("BC Originals");
+                return (() => {
+                    var l = x();
+                    return a(l, o(f, {
+                        class: "h-auto w-24",
+                        alt: "provider",
+                        args: "w=200",
+                        get src() {
+                            return r ? g.darken ? i.assets(c.inActive ? "/logo/logo_festival.png" : "/logo/logo.png") : i.assets(c.inActive ? "/logo/logo_w_festival.png" : "/logo/logo_w.png") : g.darken ? e().logo : e().logoWhite
+                        }
+                    })), l
+                })()
+            }
+        })), d(() => u(s, h("flex w-full items-center gap-2 mt-3 sm:w-1/4 sm:flex-none", t.class))), s
+    })()
+};
+export {
+    F as C
+};

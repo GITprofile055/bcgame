@@ -1,0 +1,235 @@
+import {
+    n as E,
+    ao as x,
+    a9 as v,
+    h as b,
+    O as _,
+    as as z,
+    k as s,
+    a4 as C,
+    Y as N,
+    v as k,
+    y as B,
+    a2 as j,
+    b as R,
+    o as O
+} from "./vendor-DYV1gSPf.js";
+import {
+    a as A,
+    ai as S,
+    d as p,
+    o as f,
+    E as T,
+    L as M,
+    e as m,
+    b as d,
+    k as $,
+    t as H,
+    n as F,
+    j as q,
+    u as y
+} from "./common-Byjxyxqw.js";
+import {
+    g as D
+} from "./index-BSHcnsSF.js";
+var G = k('<div id=betby class="-mx-4 !my-0 min-h-[70vh] sm:mx-0">'),
+    P = k('<div class="center -mt-4 h-[84vh] flex-auto sm:-mt-3">'),
+    U = k("<div>");
+const V = x(async function() {
+        return []
+    }),
+    W = {
+        pt: "pt-br",
+        tl: "en-ph",
+        "zh-CN": "zh",
+        "zh-TW": "zh-Hant"
+    };
+
+function Y(t) {
+    const {
+        isNgHost: n,
+        isNg2Host: e
+    } = y.getHostType(m.host);
+    return n || e ? t ? "bc-game-dark-classic" : "bc-game-light-classic" : t ? "bc-game-dark-tile" : "bc-game-light-tile"
+}
+
+function h(t) {
+    const n = document.documentElement,
+        e = window.getComputedStyle(n),
+        a = parseFloat(e.fontSize);
+    return Number((t * (a / 16)).toFixed(2))
+}
+let w = !1;
+async function Z(t) {
+    w || (m.isDevHost ? await y.loadScript("https://ui.invisiblesport.com/bt-renderer.min.js") : await y.loadScript("https://bcgame.sptsportscdn.com/bt-renderer.min.js"), w = !0)
+}
+async function J(t, n, e, a, o, i, r, l) {
+    if (await Z(), e === "USDFIAT") return H.error("Invalid currency"), {
+        jwtToken: "",
+        lng: ""
+    };
+    if (e && a) {
+        const {
+            lang: g,
+            jwtToken: c
+        } = await F().post("/platform-sports/v14/login", {
+            device: t,
+            lang: n,
+            currency: e,
+            brandId: i,
+            bonus: l
+        });
+        return r ? c : {
+            jwtToken: c,
+            lng: g
+        }
+    } else return {
+        jwtToken: "",
+        lng: ""
+    }
+}
+
+function K(t) {
+    const [n] = v(), [e, a] = R(0), o = q(), i = m.mobile;
+    let r;
+    async function l() {
+        return t.onTokenExpired(!0)
+    }
+
+    function g() {
+        return a(u => u + 1)
+    }
+    b(() => {
+        const u = n["bt-path"] || "/";
+        r && r.updateOptions({
+            url: u
+        })
+    });
+    const c = document.getElementsByClassName("page-header")[0] ? .clientHeight || h(56),
+        I = document.getElementsByClassName("tabbar")[0] ? .clientHeight || h(72);
+    return b(() => {
+        console.log(e());
+        const u = {
+            token: t.token,
+            brand_id: D(n.brandId),
+            onTokenExpired: l,
+            themeName: Y(t.isDarken),
+            lang: t.lng,
+            target: document.getElementById("betby"),
+            stickyTop: i ? h(56) : 60,
+            betslipZIndex: 1,
+            onLogin: function() {
+                o("/login/signin")
+            },
+            onRegister: function() {
+                o("/login/regist")
+            },
+            onRecharge: function() {
+                o("/deposit")
+            },
+            betSlipOffsetTop: c,
+            betSlipOffsetBottom: i ? I : 0,
+            betSlipOffsetRight: i ? 0 : 70,
+            onSessionRefresh: g
+        };
+        t.token || delete u.token, r && r.kill();
+        var L = new BTRenderer().initialize(u);
+        r = L
+    }), O(() => {
+        r && r.kill(), r = void 0
+    }), G()
+}
+
+function Q() {
+    const [t] = v(), n = () => m.mobile ? 1 : 2, e = () => p.login, a = m.isDevHost, o = () => p.setting.currencyName, i = () => W[d.lang] ? ? d.lang, r = () => p.setting.currencyBonusType === "sport", l = c => J(n(), i(), o(), e(), a, D(t.brandId), c, r()), [g] = E(() => o() + e() + i() + r() + d.darken, () => l(!1));
+    return s(N, {
+        get when() {
+            return g()
+        },
+        children: c => s(K, {
+            get token() {
+                return c() ? .jwtToken
+            },
+            get isDarken() {
+                return d.darken
+            },
+            get lng() {
+                return c().lng || i()
+            },
+            isDev: a,
+            get device() {
+                return n()
+            },
+            get currency() {
+                return o()
+            },
+            get isLogin() {
+                return e()
+            },
+            onTokenExpired: l
+        })
+    })
+}
+
+function re() {
+    const [t] = E(V, {
+        initialValue: []
+    }), [n] = v();
+    return b(() => {
+        A.emit("change_chatroom", 14)
+    }), _(() => {
+        if (n.bonus) {
+            const e = S[p.setting.currencyName];
+            if (e && e.groupAmount.sports.gt(0)) f("setting", "currencyBonusType", "sport");
+            else {
+                const a = z(S, o => o.groupAmount.sports.gt(0));
+                a && (f("setting", "currencyName", a.currencyName), f("setting", "currencyBonusType", "sport"))
+            }
+        }
+    }), s(j, {
+        get fallback() {
+            return (() => {
+                var e = P();
+                return B(e, s(M, {})), e
+            })()
+        },
+        get children() {
+            return s(C, {
+                fallback: e => s(T, {
+                    class: "h-[84vh]",
+                    get children() {
+                        return s(X, {
+                            err: e
+                        })
+                    }
+                }),
+                get children() {
+                    return s(N, {
+                        get when() {
+                            return t().every(e => e.type !== "Sports")
+                        },
+                        get fallback() {
+                            return s(T, {
+                                class: "h-[84vh]"
+                            })
+                        },
+                        get children() {
+                            return s(Q, {})
+                        }
+                    })
+                }
+            })
+        }
+    })
+}
+
+function X(t) {
+    return t.err.code === $.ErrorCode.SELF_GAMBLING_LIMITS && H(t.err), (() => {
+        var n = U();
+        return B(n, () => t.err.message), n
+    })()
+}
+export {
+    re as
+    default
+};
