@@ -1,6 +1,8 @@
 import React, { useContext, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
+  const navigate = useNavigate();
 
 
   return (
@@ -350,7 +352,7 @@ const Dashboard = () => {
           <div class="-mx-4 bg-layer2 p-4">
             <div class="flex w-full flex-col gap-2 items-stretch sm:mt-6 lg:!flex-row lg:!gap-3">
               <div class="flex gap-2 flex-3 lg:!gap-3">
-                <button class="button button-m relative h-32 flex-1 overflow-hidden rounded-xl bg-layer4 font-extrabold center p-1.5 sm:h-[252px] sm:px-3 sm:py-5 col-span-2 col-start-1" type="button" style={{ backgroundImage: 'linear-gradient(to left, rgb(44, 80, 64), transparent 75%)' }}>
+                <button class="button button-m relative h-32 flex-1 overflow-hidden rounded-xl bg-layer4 font-extrabold center p-1.5 sm:h-[252px] sm:px-3 sm:py-5 col-span-2 col-start-1" type="button" style={{ backgroundImage: 'linear-gradient(to left, rgb(44, 80, 64), transparent 75%)' }}   onClick={() => navigate("/casino")}>
                   <img class="absolute right-0 top-0 h-[120%] sm:h-full" src="/assets/casino-D-4QWHdb.png" />
                   <div class="relative z-10 flex h-full flex-col flex-auto">
                     <div class="flex items-center">
@@ -360,7 +362,7 @@ const Dashboard = () => {
                     <div class="hidden font-semibold text-secondary mb-1.5 mt-auto max-w-60 text-left lg:block">Dive into our in-house games, live casino and slots</div>
                   </div>
                 </button>
-                <button class="button button-m relative h-32 flex-1 overflow-hidden rounded-xl bg-layer4 font-extrabold center p-1.5 sm:h-[252px] sm:px-3 sm:py-5 col-span-2 col-start-1" type="button" style={{ backgroundImage: 'linear-gradient(to left, rgb(88, 46, 89), transparent 75%)' }}>
+                <button class="button button-m relative h-32 flex-1 overflow-hidden rounded-xl bg-layer4 font-extrabold center p-1.5 sm:h-[252px] sm:px-3 sm:py-5 col-span-2 col-start-1" type="button" style={{ backgroundImage: 'linear-gradient(to left, rgb(88, 46, 89), transparent 75%)' }}onClick={() => navigate("/sports")}>
                   <img class="absolute right-0 top-0 h-[120%] sm:h-full" src="/assets/sports_in-BiOOAtE4.png" />
                   <div class="relative z-10 flex h-full flex-col flex-auto">
                     <div class="flex items-center">
