@@ -10,6 +10,8 @@ import Register from "./pages/auth/Register";
 import ForgotPassword from "./pages/auth/ForgotPassword";
 import Language from "./components/Langauge";
 import Dashboard from "./pages/home/Dashboard";
+import Casino from "./pages/home/Casino";
+import Sports from "./pages/home/sports";
 
 
 import Header from "./components/Header";
@@ -27,7 +29,7 @@ import 'react-toastify/dist/ReactToastify.css';
 function AppContent() {
     const location = useLocation();
     const hiddenFooterRoutes = [
-
+     
     ];
 
     // Check if current path matches any of the above OR dynamic TradingChart route
@@ -42,7 +44,10 @@ function AppContent() {
 
             <Routes>
 
-                <Route path="/" element={<Dashboard />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/casino" element={<Casino />} />
+                <Route path="/sports" element={<Sports />} />
+
 
             </Routes>
 
